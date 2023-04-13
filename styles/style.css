@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Get Schwifty";
+  src: url("../fonts/get_schwifty.ttf") format("truetype");
+}
+
+.bannerletras {
+  font-family: "Get Schwifty", sans-serif;
+  display: flex;
+  border-radius: 55px;
+  padding: 5px;
+  text-align: center;
+}
+h1 {
+  font-family: "Get Schwifty", sans-serif;
+  font-size: 100px;
+  color: #48ff00;
+  text-shadow: 5px 5px 0 #0640ff;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar {
+  background: #ff8d01;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Get Schwifty", sans-serif;
+  font-size: 50px;
+}
+.nav_logo {
+  font-family: "Get Schwifty", sans-serif;
+  display: flex;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 15px;
+  color: black;
+}
+.nav_items a {
+  margin: 15px;
+  color: white;
+  position: relative;
+  text-decoration: none;
+}
+.nav_items a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: rgb(255, 151, 5);
+  transition: all 0.5s;
+}
+.nav_items a:hover::before {
+  width: 100% !important;
+}
+.nav_toggle {
+  display: none;
+}
+@media (max-width: 768px) {
+  .nav_items {
+    position: absolute;
+    top: 280px;
+    margin-top: 100px;
+    left: 0;
+    background: orange;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: 0.3s ease all;
+  }
+  .navbar {
+    font-size: 18px;
+    margin-bottom: 220px;
+  }
+}
+.nav_items a {
+  text-align: center;
+}
+.nav_toggle {
+  display: flex !important;
+  flex-direction: column;
+  margin: 15px;
+}
+.nav_toggle span {
+  width: 30px;
+  height: 4px;
+  background: white;
+  margin-bottom: 5px;
+  border-radius: 2px;
+  transform-origin: 5px 0px;
+  transition: all 0.2s linear;
+}
+.close span {
+  transform: rotate(45deg) translate(0px, 0px);
+}
+.close span:nth-child(2) {
+  display: none;
+}
+.close span:nth-child(3) {
+  transform: rotate(-45deg) translate(-5px, 1px);
+}
+.open {
+  transform: translateX(0) !important;
+}
+
+h1 {
+  font-size: 100px;
+  color: #48ff00;
+  text-shadow: 5px 5px 0 #0640ff;
+}
+
+main {
+  align-items: center;
+}
+
+.titulos {
+  margin: 8px;
+  padding: 8px;
+  background-color: rgba(59, 70, 173, 0.966);
+  font-family: "Get Schwifty", sans-serif;
+  font-size: 60px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.letraclaraparrafo {
+  text-align: center;
+  color: aliceblue;
+  font-size: 25px;
+}
+
+body {
+  background-color: rgb(148, 250, 15);
+  padding: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-image: url("../img/galaxia.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*CONTENEDOR DE LOS PERSONAJES*/
+.container {
+  padding: 5px;
+  background-color: rgb(223, 25, 190);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/*ALINEACION EN FORMA DE GRILLA*/
+.grid-item {
+  background-color: rgb(62, 180, 8);
+  text-align: center;
+  margin: 8px;
+  border-radius: 10px;
+  width: 160px;
+}
+
+/*REDONDEO DE ESQUINAS DE LA GRILLA*/
+.grid-item img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+/*CONTENEDOR DE TEMPORADAS*/
+.container_t {
+  padding: 8px;
+  background-color: rgb(47, 233, 0);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/*ALINEACION EN FORMA DE GRILLA PARA TEMPORADAS*/
+.grid-item_t {
+  background-color: rgb(129, 2, 248);
+  text-align: center;
+  margin: 8px;
+  border-radius: 10px;
+  width: 160px;
+  padding-bottom: 3px;
+}
+/*PARA IMAGENES TEMPORADA*/
+.grid-item_t img {
+  padding: 8px;
+  width: 150px;
+  border-radius: 10%;
+}
+/*PARA QUE NO QUEDE SUBRAYADO HBO Y SE CENTRE*/
+.linkHbo {
+  text-decoration: none;
+  text-align: center;  
+}
+
+/*PARA QUE NO QUEDE SUBRAYADO*/
+.linkSencillo {
+  text-decoration: none;
+}
+
+/* Comienzo estilos Footer */
+
+footer {
+  background-color: rgb(5, 116, 207);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*DIVISIONES DE LA LISTA*/
+footer div nav ul {
+  list-style: none;
+}
+
+footer div nav ul li {
+  padding: 5px;
+  margin: 12px;
+  background-color: rgb(241, 39, 181);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 30%;
+}
+
+/*PARA TITULOS DE PIE Y MAS*/
+.tituloPie {
+  margin: 6px;
+  padding: 6px;
+  font-family: "Get Schwifty", sans-serif;
+  font-size: 45px;
+  text-align: center;
+}
+.letraProfe {
+  font-family: "Get Schwifty", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
