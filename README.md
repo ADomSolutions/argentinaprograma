@@ -1,4 +1,4 @@
-# 🚀 Rick y Morty - Proyecto Front End
+# 🚀 Rick y Morty - Proyecto Front End - DOMENICO ALEJANDRO
 
 [![HTML5](https://img.shields.io/badge/HTML5-orange?logo=html5&logoColor=white)](https://developer.mozilla.org/es/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-blue?logo=css3&logoColor=white)](https://developer.mozilla.org/es/docs/Web/CSS)
@@ -29,7 +29,7 @@ La aplicación es una web dedicada a la serie **Rick y Morty**, donde se muestra
 
 - **HTML5** para la estructura del sitio.  
 - **CSS3** para el diseño visual y estilos personalizados.  
-- **JavaScript** (básico, si lo usaste para interacción).  
+- **JavaScript** (básico para interacción).  
 - **Vercel** para el deploy de la aplicación.
 - **APIS** para los personajes.
 
@@ -43,7 +43,7 @@ Durante el desarrollo de este proyecto aprendí:
 - Usar imágenes y recursos multimedia en la web.  
 - Publicar un proyecto en línea usando **Vercel**.
 - Mejorar la responsividad en móviles.  
-- Agregar animaciones con CSS.  
+- Agregar animaciones con CSS y Js.  
 - Integrar datos dinámicos usando una **API pública de Rick & Morty**.  
 
 ---
